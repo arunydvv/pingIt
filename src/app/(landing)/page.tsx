@@ -5,6 +5,7 @@ import { Inter } from 'next/font/google';
 import Heading from '@/components/Heading';
 import NiceButton from '@/components/NiceButton';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
+import MockDiscordApp from '@/components/MockDiscordApp';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -55,18 +56,20 @@ const page = () => {
         </MaxWidthWrapper>
       </section>
 
-      <section className='bg-brand-50 py-12'>
-        <MaxWidthWrapper>
-          <div className='relative mx-auto  flex flex-col gap-10 items-start'>
-            <h2 className='text-4xl sm:text-5xl text-brand-900 font-semibold'>
-              How it works
-            </h2>
-            <p className='text-base/7 text-gray-600 max-w-prose '>
-              <b>PingIt</b> is a simple and powerful tool that allows you to monitor your Saas in real-time. With <b>PingIt</b>, you can track sales, new users, or any other event on your Saas, and get notified in real-time on your Discord server. It's a powerful tool that helps you keep track of your business, no matter where you are.
-            </p>
-          </div>
-        </MaxWidthWrapper>
+      
+      <section className='relative bg-brand-25 pb-4 '>
+        <div className='absolute inset-x-0 bottom-24 top-24 bg-brand-600'>
+          <MaxWidthWrapper className='relative'>
+            <div
+              className='-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4' >
+              <MockDiscordApp>
+              </MockDiscordApp>
+                </div>
+          </MaxWidthWrapper>
+        </div>
       </section>
+      <section></section>
+      <section></section>
 
     </>
   );

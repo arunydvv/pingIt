@@ -6,7 +6,7 @@ import { Button, buttonVariants } from '@/components/ui/button'
 import { ArrowRight } from 'lucide-react'
 
 const Navbar = () => {
-    const userLoggedIn = false;
+    const userLoggedIn = true;
 
     return (
         <nav className='sticky z-[100] h-16 top-0 w-full border-b border-gray-200 bg-white/80 backdrop-blur-lg'>
