@@ -5,7 +5,7 @@ import { Inter } from 'next/font/google';
 import Heading from '@/components/Heading';
 import NiceButton from '@/components/NiceButton';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
-import MockDiscordApp from '@/components/MockDiscordApp';
+import {MockDiscordApp} from '@/components/MockDiscordApp';
 
 const inter = Inter({ subsets: ['latin'] });
 
