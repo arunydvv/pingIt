@@ -1,7 +1,9 @@
 import Link from 'next/link'
 import React from 'react'
 import MaxWidthWrapper from './MaxWidthWrapper'
-import { SignOutButton } from "@clerk/nextjs"
+import { SignOutButton, SignInButton } from "@clerk/nextjs"
+import { Button, buttonVariants } from '@/components/ui/button'
+import { ArrowRight } from 'lucide-react'
 
 const Navbar = () => {
     const userLoggedIn = false;
@@ -19,14 +21,43 @@ const Navbar = () => {
                         {userLoggedIn ? 
                             <>
                                 <SignOutButton>
-                                    <button>
-                                        
-                                    </button>
-                                    </SignOutButton>
+                                    <Button
+                                        size="sm"
+                                        variant="ghost"
+                                    >Sign Out</Button>
+                                </SignOutButton>
+                                <Link
+                                    href="/dashboard"
+                                    className={
+                                        buttonVariants({
+                                            size: "sm",
+                                            className: "flex items-center gap-1", 
+                                        })
+                                    }
+                                >
+                                    Dashboard
+                                    <ArrowRight className='size-4 shrink-0 text-white transition-transform duration-300 ease-in-out group-hover:translate-x[2px]'/>
+                                </Link>
                                 
                             </>
                             
-                            : null}
+                            : 
+                            <>
+                                <Link
+                                    href="/sign-in"
+                                    className={
+                                        buttonVariants({
+                                            size: "sm",
+                                            className: "flex items-center gap-1",
+                                        })
+                                    }
+                                >
+                                    Sign In
+                                    <ArrowRight className='size-4 shrink-0 text-white transition-transform duration-300 ease-in-out group-hover:translate-x[2px]' />
+                                </Link>
+                                
+                            </>
+                        }
                     </div>
                 </div>
             </MaxWidthWrapper>

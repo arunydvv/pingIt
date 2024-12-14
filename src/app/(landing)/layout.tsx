@@ -8,7 +8,9 @@ interface LayoutInterface {
 const Layout = ({ children }: LayoutInterface) => {
   return (
     <>
-      <Navbar />
+
+        <Navbar />
+
       {children}
     </>
   )
