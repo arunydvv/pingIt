@@ -9,6 +9,7 @@ import { DiscordMessage } from '@/components/DiscordMessage';
 import { MockDiscordApp } from '@/components/MockDiscordApp';
 import { AnimatedList } from '@/components/ui/animated-list'; 
 import Image from 'next/image';
+import Header from '../resources/Header';
 
 const inter = Inter({ subsets: ['latin'] });
 

@@ -6,6 +6,7 @@ import { cn } from "@/utils"
 
 import "./globals.css"
 import { ClerkLoading, ClerkProvider } from "@clerk/nextjs"
+import Background from "./resources/Background"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" })
 const eb_garamond = EB_Garamond({
@@ -27,7 +28,8 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en" className={cn(inter.variable, eb_garamond.variable)}>
-        <body className="font-sans bg-brand-50 text-brand-950 antialiased">
+        <body className="font-sans  text-brand-950 antialiased">
+          <Background/>
           <Providers>{children}</Providers>
         </body>
       </html>
