@@ -14,7 +14,7 @@ import Hero from "../resources/Hero"
 import Features from "../resources/Features"
 import Developer from "../resources/Developer"
 import Background from "../resources/Background"
-import {Discord} from "../resources/Discord"
+import Discord from "../resources/Discord"
 
 const inter = Inter({ subsets: ["latin"] })
 
