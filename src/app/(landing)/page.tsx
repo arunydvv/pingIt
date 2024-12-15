@@ -7,7 +7,7 @@ import NiceButton from '@/components/NiceButton';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
 import { DiscordMessage } from '@/components/DiscordMessage';
 import { MockDiscordApp } from '@/components/MockDiscordApp';
-import { AnimatedList } from '@/components/ui/animated-list'; // Removed unused AnimatedListItem import
+import { AnimatedList } from '@/components/ui/animated-list'; 
 import Image from 'next/image';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -40,21 +40,20 @@ const Page = () => {
           <div className="relative mx-auto text-center flex flex-col items-center gap-10">
             <div>
               <Heading>
-                <span>Real-Time SaaS Insights,</span>
+                <span>Get Real-Time SaaS Insights,</span>
                 <br />
                 <span className="relative bg-gradient-to-r from-brand-700 to-brand-800 text-transparent bg-clip-text">
-                  Delivered to Your Discord
+                  Directly in Your Discord
                 </span>
               </Heading>
             </div>
 
             <p className="text-base/7 text-gray-600 max-w-prose text-center text-pretty">
-              PingPanda is the easiest way to monitor your SaaS. Get instant
-              notifications for{" "}
+              PingPanda simplifies SaaS monitoring like never before. Receive real-time notifications for{" "}
               <span className="font-semibold text-gray-700">
-                sales, new users, or any other event
+                sales, new user sign-ups, and any other critical events
               </span>{" "}
-              sent directly to your Discord.
+              directly to your Discord, instantly keeping you in the loop.
             </p>
 
             <ul className="space-y-2 text-base/7 text-gray-600 text-left flex flex-col items-start">
