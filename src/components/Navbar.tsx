@@ -9,7 +9,7 @@ const Navbar = () => {
     const userLoggedIn = true;
 
     return (
-        <nav className='sticky z-[100] h-16 top-0 w-full border-b border-gray-200 bg-white/80 backdrop-blur-lg'>
+        <nav className='sticky z-[100] h-16 top-0 w-full border-b bg-transparent backdrop-blur-lg'>
             <MaxWidthWrapper>
                 <div className='flex h-16 items-center justify-between'>
                     <Link href="/" className="flex-40 font-semibold ">
@@ -24,6 +24,7 @@ const Navbar = () => {
                                     <Button
                                         size="sm"
                                         variant="ghost"
+                                       
                                     >Sign Out</Button>
                                 </SignOutButton>
                                 <Link
@@ -31,13 +32,14 @@ const Navbar = () => {
                                     className={
                                         buttonVariants({
                                             size: "sm",
-                                            className: "flex items-center gap-1", 
+                                            className: "flex items-center gap-1 bg-blue-600", // Added bg-blue-600 for blue background
                                         })
                                     }
                                 >
                                     Dashboard
-                                    <ArrowRight className='size-4 shrink-0 text-white transition-transform duration-300 ease-in-out group-hover:translate-x[2px]'/>
+                                    <ArrowRight className='size-4 shrink-0 text-white transition-transform duration-300 ease-in-out group-hover:translate-x[2px]' />
                                 </Link>
+
                                 
                             </>
                             
