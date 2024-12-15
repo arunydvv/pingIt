@@ -5,7 +5,9 @@ import { Inter } from 'next/font/google';
 import Heading from '@/components/Heading';
 import NiceButton from '@/components/NiceButton';
 import MaxWidthWrapper from '@/components/MaxWidthWrapper';
+import {DiscordMessage} from '@/components/DiscordMessage';
 import {MockDiscordApp} from '@/components/MockDiscordApp';
+import { AnimatedList, AnimatedListItem } from '@/components/ui/animated-list';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -63,6 +65,47 @@ const page = () => {
             <div
               className='-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4' >
               <MockDiscordApp>
+                <AnimatedList>
+                  <AnimatedListItem>
+                    <DiscordMessage
+                      avatarSrc='/brand-asset-profile-picture.png'
+                      avatarAlt='PingIt Avatar'
+                      username='PingIt'
+                      timestamp={`Today at ${new Date().getHours()}:${new Date().getMinutes()} PM`}
+                      badgeText='SignUp'
+                      badgeColor='#43b581'
+                      title='👤 New User Signed Up!'
+                      content={{
+                        name: "John Doe",
+                        email: "johndoe@example.com",
+                      }}
+                    >
+                    </DiscordMessage>
+
+                    <DiscordMessage
+                      avatarSrc='/brand-asset-profile-picture.png'
+                      avatarAlt='PingIt Avatar'
+                      username='PingIt'
+                      timestamp={`Today at ${new Date().getHours()}:${new Date().getMinutes()} PM`}
+                      badgeText='Payment'
+                      badgeColor='#faa61a'
+                      title='💸 Payment Received!'
+                      content={{
+                        name: "Sarah Lee",
+                        amount: "$49.99",
+                        paymentMethod: "Credit Card",
+                      }}
+                    >
+                    </DiscordMessage>
+
+
+
+
+
+
+                  </AnimatedListItem>
+
+                </AnimatedList>
               </MockDiscordApp>
                 </div>
           </MaxWidthWrapper>

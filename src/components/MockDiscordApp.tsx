@@ -21,7 +21,7 @@ import Image from "next/image"
 
 export const MockDiscordApp = ({ children }: PropsWithChildren) => {
     return (
-        <div className="flex min-h-[800px] w-full max-w-[1200px] bg-discord-background text-white rounded-lg overflow-hidden shadow-xl">
+        <div className="flex min-h-[700px] w-full max-w-[1200px] bg-discord-background text-white rounded-lg overflow-hidden shadow-xl">
             {/* server list */}
             <div className="hidden sm:flex w-[72px] bg-[#202225] py-3 flex-col items-center">
                 <div className="size-12 bg-discord-brand-color rounded-2xl flex items-center justify-center mb-2 hover:rounded-xl transition-all duration-200">
@@ -96,12 +96,12 @@ export const MockDiscordApp = ({ children }: PropsWithChildren) => {
                     </div>
                 </div>
 
-                <div className="p-2 bg-[#292b2f] flex items-center">
-                    <div className="size-8 rounded-full bg-brand-700 mr-2" />
+                <div className="pb-5 bg-[#292b2f] flex items-center pt-3 px-3">
+                    <div className="size-8 rounded-full bg-brand-700 mr-2 " />
                     <div className="flex-1">
                         <p className="text-sm font-medium text-white">You</p>
                         <p className="text-xs text-[#b9bbbe] flex items-center">
-                            @your_account
+                            @username
                         </p>
                     </div>
 
