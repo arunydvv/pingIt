@@ -1,5 +1,3 @@
-
-
 "use client";
 
 import { motion } from "framer-motion";
@@ -8,19 +6,10 @@ import { SparklesIcon } from "@heroicons/react/24/solid";
 const Hero = () => {
     return (
         <section className="relative pt-24 pb-24 lg:pt-32 lg:pb-32 overflow-hidden">
-            {/* 背景装饰 */}
+
             <div className="absolute inset-0 -z-10">
                 <div className="absolute inset-0 bg-gradient-to-b from-blue-50 to-white" />
-                <div className="absolute inset-0">
-                    <svg className="absolute h-full w-full" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                            <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
-                                <path d="M0 .5H32M.5 0V32" fill="none" stroke="rgb(226 232 240 / 0.3)" />
-                            </pattern>
-                        </defs>
-                        <rect width="100%" height="100%" fill="url(#grid)" />
-                    </svg>
-                </div>
+               
                 <div className="absolute top-0 left-1/2 w-[800px] h-[800px] -translate-x-1/2 -translate-y-1/2">
                     <div className="absolute inset-0 rotate-45 bg-gradient-to-r from-blue-400/20 to-cyan-400/20 blur-3xl" />
                 </div>
