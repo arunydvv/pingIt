@@ -1,3 +1,4 @@
+"use client"
 import { PropsWithChildren } from "react"
 import { Icons } from "./icons"
 import {
@@ -18,7 +19,6 @@ import {
     Video,
 } from "lucide-react"
 import Image from "next/image"
-
 export const MockDiscordApp = ({ children }: PropsWithChildren) => {
     return (
         <div className="flex min-h-[700px] w-full max-w-[1200px] bg-discord-background text-white rounded-lg overflow-hidden shadow-xl">
