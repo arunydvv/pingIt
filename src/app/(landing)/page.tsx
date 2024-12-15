@@ -66,52 +66,70 @@ const page = () => {
               className='-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4' >
               <MockDiscordApp>
                 <AnimatedList>
-                  <AnimatedListItem>
-                    <DiscordMessage
-                      avatarSrc='/brand-asset-profile-picture.png'
-                      avatarAlt='PingIt Avatar'
-                      username='PingIt'
-                      timestamp={`Today at ${new Date().getHours()}:${new Date().getMinutes()} PM`}
-                      badgeText='SignUp'
-                      badgeColor='#43b581'
-                      title='👤 New User Signed Up!'
-                      content={{
-                        name: "John Doe",
-                        email: "johndoe@example.com",
-                      }}
-                    >
-                    </DiscordMessage>
-
-                    <DiscordMessage
-                      avatarSrc='/brand-asset-profile-picture.png'
-                      avatarAlt='PingIt Avatar'
-                      username='PingIt'
-                      timestamp={`Today at ${new Date().getHours()}:${new Date().getMinutes()} PM`}
-                      badgeText='Payment'
-                      badgeColor='#faa61a'
-                      title='💸 Payment Received!'
-                      content={{
-                        name: "Sarah Lee",
-                        amount: "$49.99",
-                        paymentMethod: "Credit Card",
-                      }}
-                    >
-                    </DiscordMessage>
-
-
-
-
-
-
-                  </AnimatedListItem>
-
+                  <DiscordMessage
+                    avatarSrc="/brand-asset-profile-picture.png"
+                    avatarAlt="PingPanda Avatar"
+                    username="PingPanda"
+                    timestamp="Today at 12:35PM"
+                    badgeText="SignUp"
+                    badgeColor="#43b581"
+                    title="👤 New user signed up"
+                    content={{
+                      name: "Mateo Ortiz",
+                      email: "m.ortiz19@gmail.com",
+                    }}
+                  />
+                  <DiscordMessage
+                    avatarSrc="/brand-asset-profile-picture.png"
+                    avatarAlt="PingPanda Avatar"
+                    username="PingPanda"
+                    timestamp="Today at 12:35PM"
+                    badgeText="Revenue"
+                    badgeColor="#faa61a"
+                    title="💰 Payment received"
+                    content={{
+                      amount: "$49.00",
+                      email: "zoe.martinez2001@email.com",
+                      plan: "PRO",
+                    }}
+                  />
+                  <DiscordMessage
+                    avatarSrc="/brand-asset-profile-picture.png"
+                    avatarAlt="PingPanda Avatar"
+                    username="PingPanda"
+                    timestamp="Today at 5:11AM"
+                    badgeText="Milestone"
+                    badgeColor="#5865f2"
+                    title="🚀 Revenue Milestone Achieved"
+                    content={{
+                      recurringRevenue: "$5.000 USD",
+                      growth: "+8.2%",
+                    }}
+                  />
                 </AnimatedList>
               </MockDiscordApp>
                 </div>
           </MaxWidthWrapper>
         </div>
       </section>
-      <section></section>
+
+
+      <section className=' py-24 sm:py-32 bg-brand-25'>
+        <MaxWidthWrapper
+        className='flex flex-col items-center gap-16 sm:gap-20 '
+        >
+          <div className=''>
+                  <h2 className='text-center text-base leadin-7'></h2>
+          </div>
+
+        </MaxWidthWrapper>
+
+
+      </section>
+
+
+
+
       <section></section>
 
     </>
