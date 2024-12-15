@@ -15,6 +15,7 @@ import Features from "../resources/Features"
 import Developer from "../resources/Developer"
 import Background from "../resources/Background"
 import Discord from "../resources/Discord"
+import Footer from "../resources/Footer"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -45,6 +46,7 @@ const Page = () => {
       <Discord />
       <Features />
       <Developer />
+      <Footer />
     </>
   )
 }

@@ -11,7 +11,7 @@ import {
 const communityFeatures = [
     {
         name: "Open Source",
-        description: "Core features are open-source, supporting community contributions and innovation.",
+        description: "The project is open-source, supporting community contributions and innovation.",
         icon: CodeBracketIcon,
     },
     {
@@ -33,16 +33,11 @@ const communityFeatures = [
 
 const Developer = () => {
     return (
-        <section id="developer" className="py-24 lg:py-32 overflow-hidden">
+        <section id="developer" className="pt-2 overflow-hidden">
             {/* Background decoration */}
-            <div className="absolute inset-0 -z-10">
-                <div className="absolute inset-0 bg-gradient-to-b from-gray-50 to-white" />
-                <div className="absolute right-0 top-0 -translate-y-1/2 translate-x-1/2">
-                    <div className="w-[600px] h-[600px] rounded-full bg-gradient-to-br from-blue-100 to-cyan-100 blur-3xl opacity-30" />
-                </div>
-            </div>
+            
 
-            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="mx-auto max-w-7xl px-6 lg:px-8 py-24 lg:py-32">
                 <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                     {/* Left content */}
                     <motion.div
