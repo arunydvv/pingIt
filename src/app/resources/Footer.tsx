@@ -38,14 +38,14 @@ const navigation = {
         },
         {
             name: "GitHub",
-            href: "https://github.com/langgptai",
+            href: "https://github.com/arunydvv",
             icon: GithubIcon,
         },
         {
             name: "Email",
-            href: "mailto:ethereal_ai@hotmail.com",
+            href: "mailto:arunydvv@outlook.com",
             icon: MailIcon,
-            value: "ethereal_ai@hotmail.com",
+            value: "arunydvv@outlook.com",
         },
     ],
 };
@@ -171,7 +171,7 @@ const Footer = () => {
                     <div className="mb-8 flex flex-wrap justify-center gap-4">
                         {[
                             { text: "Cross-Platform Support", icon: GlobeIcon },
-                            { text: "Encrypted Security", icon: ShieldIcon },
+                            { text: "Open Source", icon: ShieldIcon },
                             { text: "Continuous Updates", icon: RssIcon },
                             { text: "Dedicated Service", icon: HeartIcon },
                             { text: "Knowledge Sharing", icon: BookOpenIcon },
@@ -186,31 +186,10 @@ const Footer = () => {
                         ))}
                     </div>
 
-                    {/* Copyright Information */}
                     <div className="mt-8 border-t border-gray-900/10 pt-8 flex flex-col items-center">
                         <p className="text-xs leading-5 text-gray-500">
                             &copy; {new Date().getFullYear()} PingIt. All rights reserved.
                         </p>
-                        {/* ICP备案 Information */}
-                        <div className="mt-2 flex items-center space-x-4 text-xs text-gray-500">
-                            <a
-                                href="https://beian.miit.gov.cn/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="hover:text-blue-500 transition-colors duration-200"
-                            >
-                                京ICP备XXXXXXXX号-1
-                            </a>
-                            <span>|</span>
-                            <a
-                                href="http://www.beian.gov.cn/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="hover:text-blue-500 transition-colors duration-200"
-                            >
-                                京公网安备 XXXXXXXXXXXXX号
-                            </a>
-                        </div>
                     </div>
                 </div>
             </div>

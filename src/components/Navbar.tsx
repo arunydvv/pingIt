@@ -6,16 +6,14 @@ import { Button, buttonVariants } from '@/components/ui/button'
 import { ArrowRight } from 'lucide-react'
 
 const Navbar = () => {
-    const userLoggedIn = true;
+    const userLoggedIn = false;
 
     return (
-        <nav className='sticky z-[100] h-16 top-0 w-full border-b bg-transparent backdrop-blur-lg'>
+        <nav className='sticky  z-[100] h-16 top-0 w-full border-b bg-transparent backdrop-blur-lg'>
             <MaxWidthWrapper>
                 <div className='flex h-16 items-center justify-between'>
                     <Link href="/" className="flex-40 font-semibold ">
-                        <span className='text-2xl sm:3xl'>
-                            Ping.it
-                        </span>
+                        <span className="text-transparent text-3xl bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600">PingIt</span> 
                     </Link>
                     <div className='h-full flex items-center space-x-4'>
                         {userLoggedIn ? 
@@ -32,7 +30,7 @@ const Navbar = () => {
                                     className={
                                         buttonVariants({
                                             size: "sm",
-                                            className: "flex items-center gap-1 bg-blue-600", // Added bg-blue-600 for blue background
+                                            className: "flex items-center gap-1 bg-blue-600 ", 
                                         })
                                     }
                                 >

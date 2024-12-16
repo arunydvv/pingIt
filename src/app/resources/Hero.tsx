@@ -5,7 +5,7 @@ import { SparklesIcon } from "@heroicons/react/24/solid";
 
 const Hero = () => {
     return (
-        <section className="relative pt-24 pb-24 lg:pt-32 lg:pb-32 overflow-hidden">
+        <section className="relative top-0 pt-24 pb-24 lg:pt-32 lg:pb-32 overflow-hidden">
 
             <div className="absolute inset-0 -z-10">
                 <div className="absolute inset-0 bg-gradient-to-b from-blue-50 to-white" />
@@ -23,7 +23,7 @@ const Hero = () => {
                         transition={{ duration: 0.5 }}
                         className="relative"
                     >
-                        {/* 闪光标记 */}
+
                         <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800 mb-6">
                             <SparklesIcon className="w-4 h-4 mr-1 text-blue-600" />
                             Lead your SaaS with PingIt
@@ -71,7 +71,7 @@ const Hero = () => {
                         </a>
                     </motion.div>
 
-                    {/* 预览图 */}
+
                     <motion.div
                         initial={{ opacity: 0, y: 40 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -79,13 +79,13 @@ const Hero = () => {
                         className="mt-16 flow-root px-4"
                     >
                         <div className="relative">
-                            {/* 装饰光环 */}
+
                             <div className="absolute -inset-x-2 -top-16 -bottom-16 flex justify-center">
                                 <div className="w-[800px] h-[600px] bg-gradient-to-r from-blue-400/20 via-cyan-400/20 to-purple-400/20 blur-3xl" />
                             </div>
 
                             <div className="relative rounded-xl overflow-hidden shadow-2xl ring-1 ring-gray-900/5">
-                                {/* 顶部状态栏 */}
+
                                 <div className="bg-gray-800 px-4 py-2 flex items-center gap-2">
                                     <div className="flex gap-1.5">
                                         <div className="w-3 h-3 rounded-full bg-red-500" />
@@ -95,7 +95,7 @@ const Hero = () => {
                                 </div>
                                 {/* 应用界面 */}
                                 <div className="bg-white p-4">
-                                    <img src="./p-1.png" alt="应用截图" className="aspect-[9/16] w-full max-w-xs mx-auto bg-gray-100 rounded-xl shadow-inner" />
+                                    <img src="./p-1.png" alt="Demo Image here" className="aspect-[9/16] w-full max-w-xs mx-auto bg-gray-100 rounded-xl shadow-inner" />
                                 </div>
 
                             </div>
@@ -118,12 +118,12 @@ const Hero = () => {
                         className="mt-16 flex justify-center gap-x-6 grayscale opacity-50"
                     >
                         <div className="flex gap-x-4 items-center text-sm text-gray-500">
-                            <span className="font-medium">已获用户信任</span>
+                            <span className="font-medium">Text here</span>
                             <span className="h-4 w-px bg-gray-300" />
                             <span className="font-semibold text-gray-900">10,000+</span>
                         </div>
                         <div className="flex gap-x-4 items-center text-sm text-gray-500">
-                            <span className="font-medium">App Store 评分</span>
+                            <span className="font-medium">App Store </span>
                             <span className="h-4 w-px bg-gray-300" />
                             <span className="font-semibold text-gray-900">4.8 / 5.0</span>
                         </div>
