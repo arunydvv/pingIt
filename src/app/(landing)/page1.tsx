@@ -50,7 +50,7 @@ const Page = () => {
             </div>
 
             <p className="text-base/7 text-gray-600 max-w-prose text-center text-pretty">
-              PingPanda simplifies SaaS monitoring like never before. Receive real-time notifications for{" "}
+              PingIt simplifies SaaS monitoring like never before. Receive real-time notifications for{" "}
               <span className="font-semibold text-gray-700">
                 sales, new user sign-ups, and any other critical events
               </span>{" "}
@@ -91,8 +91,8 @@ const Page = () => {
                 <AnimatedList>
                   <DiscordMessage
                     avatarSrc="/brand-asset-profile-picture.png"
-                    avatarAlt="PingPanda Avatar"
-                    username="PingPanda"
+                    avatarAlt="PingIt Avatar"
+                    username="PingIt"
                     timestamp="Today at 12:35PM"
                     badgeText="SignUp"
                     badgeColor="#43b581"
@@ -104,8 +104,8 @@ const Page = () => {
                   />
                   <DiscordMessage
                     avatarSrc="/brand-asset-profile-picture.png"
-                    avatarAlt="PingPanda Avatar"
-                    username="PingPanda"
+                    avatarAlt="PingIt Avatar"
+                    username="PingIt"
                     timestamp="Today at 12:35PM"
                     badgeText="Revenue"
                     badgeColor="#faa61a"
@@ -118,8 +118,8 @@ const Page = () => {
                   />
                   <DiscordMessage
                     avatarSrc="/brand-asset-profile-picture.png"
-                    avatarAlt="PingPanda Avatar"
-                    username="PingPanda"
+                    avatarAlt="PingIt Avatar"
+                    username="PingIt"
                     timestamp="Today at 5:11AM"
                     badgeText="Milestone"
                     badgeColor="#5865f2"

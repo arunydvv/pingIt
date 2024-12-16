@@ -93,14 +93,14 @@ const Hero = () => {
                                         <div className="w-3 h-3 rounded-full bg-green-500" />
                                     </div>
                                 </div>
-                                {/* 应用界面 */}
+
                                 <div className="bg-white p-4">
-                                    <img src="./p-1.png" alt="Demo Image here" className="aspect-[9/16] w-full max-w-xs mx-auto bg-gray-100 rounded-xl shadow-inner" />
+                                    <img src="" alt="Demo Image here" className="aspect-[9/16] w-full max-w-xs mx-auto bg-gray-100 rounded-xl shadow-inner" />
                                 </div>
 
                             </div>
 
-                            {/* 装饰元素 */}
+
                             <div className="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-1/2">
                                 <div className="w-32 h-32 rounded-full bg-blue-400/20 blur-2xl" />
                             </div>
@@ -110,7 +110,7 @@ const Hero = () => {
                         </div>
                     </motion.div>
 
-                    {/* 信任标记 */}
+
                     <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}

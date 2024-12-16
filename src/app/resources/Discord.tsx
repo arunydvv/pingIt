@@ -17,8 +17,8 @@ const Discord = () => {
                                 <AnimatedList>
                                     <DiscordMessage
                                         avatarSrc="/brand-asset-profile-picture.png"
-                                        avatarAlt="PingPanda Avatar"
-                                        username="PingPanda"
+                                        avatarAlt="PingIt Avatar"
+                                        username="PingIt"
                                         timestamp="Today at 12:35PM"
                                         badgeText="SignUp"
                                         badgeColor="#43b581"
@@ -30,8 +30,8 @@ const Discord = () => {
                                     />
                                     <DiscordMessage
                                         avatarSrc="/brand-asset-profile-picture.png"
-                                        avatarAlt="PingPanda Avatar"
-                                        username="PingPanda"
+                                        avatarAlt="PingIt Avatar"
+                                        username="PingIt"
                                         timestamp="Today at 12:35PM"
                                         badgeText="Revenue"
                                         badgeColor="#faa61a"
@@ -44,8 +44,8 @@ const Discord = () => {
                                     />
                                     <DiscordMessage
                                         avatarSrc="/brand-asset-profile-picture.png"
-                                        avatarAlt="PingPanda Avatar"
-                                        username="PingPanda"
+                                        avatarAlt="PingIt Avatar"
+                                        username="PingIt"
                                         timestamp="Today at 5:11AM"
                                         badgeText="Milestone"
                                         badgeColor="#5865f2"

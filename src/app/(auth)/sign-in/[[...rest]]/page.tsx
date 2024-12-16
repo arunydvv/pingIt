@@ -1,8 +1,13 @@
+import { SignIn } from '@clerk/nextjs'
 import React from 'react'
 
 const page = () => {
   return (
-    <div>page</div>
+      <>
+          <div className="w-full h-[90vh] flex items-center justify-center">
+              <SignIn />
+          </div>
+      </>
   )
 }
 

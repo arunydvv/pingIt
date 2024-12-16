@@ -4,9 +4,10 @@ import MaxWidthWrapper from './MaxWidthWrapper'
 import { SignOutButton, SignInButton } from "@clerk/nextjs"
 import { Button, buttonVariants } from '@/components/ui/button'
 import { ArrowRight } from 'lucide-react'
+import { currentUser } from '@clerk/nextjs/server'
 
-const Navbar = () => {
-    const userLoggedIn = false;
+const Navbar = async () => {
+    const userLoggedIn = await currentUser();
 
     return (
         <nav className='sticky  z-[100] h-16 top-0 w-full border-b bg-transparent backdrop-blur-lg'>
