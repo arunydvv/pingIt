@@ -9,9 +9,7 @@ declare global {
 
 let prisma: PrismaClient
 if (process.env.NODE_ENV === "production") {
-  const pool = new Pool({ connectionString: process.env.DATABASE_URL })
-  const adapter = new PrismaNeon(pool)
-  prisma = new PrismaClient({ adapter })
+  prisma = new PrismaClient()
 } else {
   if (!global.cachedPrisma) {
     const pool = new Pool({ connectionString: process.env.DATABASE_URL })
