@@ -47,9 +47,9 @@ const Developer = () => {
                         transition={{ duration: 0.5 }}
                     >
                         <div className="relative">
-                            <div className="absolute -top-4 -left-4">
-                                <span className="inline-flex items-center rounded-full bg-blue-100 px-4 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">
-                                    Developer Community
+                            <div className="absolute -top-8 -left-1 ">
+                                <span className="inline-flex items-center rounded-full bg-blue-100 px-4 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10 ">
+                                    Developer Community 
                                 </span>
                             </div>
 
