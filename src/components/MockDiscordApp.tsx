@@ -19,6 +19,28 @@ import {
     Video,
 } from "lucide-react"
 import Image from "next/image"
+
+// USER PROFILE 
+
+const userProfile = [
+    {
+        name: "Anna",
+        imgPath: "/users/user1.jpg"
+    },
+    {
+        name: "Carl",
+        imgPath: "/users/user2.jpg"
+    },
+    {
+        name: "John",
+        imgPath: "/users/user3.jpg"
+    },
+    {
+        name: "Dave",
+        imgPath: "/users/user4.jpg"
+    },
+]
+
 export const MockDiscordApp = ({ children }: PropsWithChildren) => {
     return (
         <div className="flex min-h-[700px] w-full max-w-[1200px] bg-discord-background text-white rounded-lg overflow-hidden shadow-xl">
@@ -83,13 +105,13 @@ export const MockDiscordApp = ({ children }: PropsWithChildren) => {
                         </div>
 
                         <div className="my-1 space-y-px">
-                            {[...Array(4)].map((_, i) => (
+                            {userProfile.map((user, i) => (
                                 <div
                                     key={i}
                                     className="flex items-center px-2 py-1.5 rounded text-gray-600 cursor-not-allowed"
                                 >
-                                    <div className="size-8 rounded-full bg-discord-background mr-3" />
-                                    <span className="font-medium">User {i + 1}</span>
+                                    <Image src={user.imgPath} alt="Users" height={32} width={32} className="bg-contain rounded-full me-3" />
+                                    <span className="font-medium">{user.name}</span>
                                 </div>
                             ))}
                         </div>
