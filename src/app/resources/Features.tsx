@@ -45,7 +45,7 @@ const features = [
     },
     {
         name: "Multi-Platform Support",
-        description: "Supports multiple platforms for maximum convenience, from email to messaging apps like Discord.",
+        description: "Seamlessly integrates with email, Discord, and more for maximum convenience.",
         icon: GlobeAltIcon,
         color: "from-teal-500 to-cyan-500",
     },
@@ -66,7 +66,7 @@ const features = [
 const Features = () => {
     return (
         <section id="features" className="pt-24 lg:pt-32 relative overflow-hidden">
-            {/* Background decoration */}
+
             <div className="absolute inset-0 -z-10">
                 <div className="absolute inset-0 bg-gradient-to-b from-gray-50/50 to-white" />
                 <div className="absolute inset-0">

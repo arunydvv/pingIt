@@ -1,7 +1,7 @@
 import { Hono } from "hono"
 import { cors } from "hono/cors"
 import { handle } from "hono/vercel"
-import authRouter from "./routers/auth-Router"
+import {authRouter} from "./routers/auth-Router"
 
 const app = new Hono().basePath("/api").use(cors())
 

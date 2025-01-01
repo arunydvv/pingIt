@@ -40,3 +40,11 @@ next-env.d.ts
 
 # wrangler
 .wrangler
+
+
+
+# Prisma
+/node_modules/
+/prisma/dev.db
+/prisma/dev.db-journal
+.env

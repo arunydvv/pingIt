@@ -7,8 +7,11 @@ import { publicProcedure } from "../procedures"
 export const dynamic = "force-dynamic"
 
 export const authRouter = router({
+    
+    // below function only returns wheter user in logged in or not
     getDatabaseSyncStatus: publicProcedure.query(async ({ c, ctx }) => {
         const auth = await currentUser()
+        console.log("auth ",auth)
 
         if (!auth) {
             return c.json({ isSynced: false })
@@ -18,8 +21,6 @@ export const authRouter = router({
             where: { externalId: auth.id },
         })
 
-        console.log('USER IN DB:', user);
-
         if (!user) {
             await db.user.create({
                 data: {
@@ -28,6 +29,9 @@ export const authRouter = router({
                     email: auth.emailAddresses[0].emailAddress,
                 },
             })
+            console.log("new user created")
+
+            return c.json({ isSynced: true })
         }
 
         return c.json({ isSynced: true })
