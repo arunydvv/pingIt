@@ -5,7 +5,7 @@ import { EB_Garamond } from "next/font/google"
 import { cn } from "@/utils"
 
 import "./globals.css"
-import { ClerkLoading, ClerkProvider } from "@clerk/nextjs"
+import { ClerkProvider } from "@clerk/nextjs"
 import Background from "./resources/Background"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" })
@@ -15,7 +15,7 @@ const eb_garamond = EB_Garamond({
 })
 
 export const metadata: Metadata = {
-  title: "Ping.it",
+  title: "PingIt - Instant Alerts",
   description: "Created by Arun",
   icons: [{ rel: "icon", url: "/brand-asset-profile-picture.png" }],
 }
