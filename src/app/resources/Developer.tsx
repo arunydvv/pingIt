@@ -34,9 +34,6 @@ const communityFeatures = [
 const Developer = () => {
     return (
         <section id="developer" className="pt-2 overflow-hidden">
-            {/* Background decoration */}
-            
-
             <div className="mx-auto max-w-7xl px-6 lg:px-8 py-24 lg:py-32">
                 <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                     {/* Left content */}
@@ -49,7 +46,7 @@ const Developer = () => {
                         <div className="relative">
                             <div className="absolute -top-8 -left-1 ">
                                 <span className="inline-flex items-center rounded-full bg-blue-100 px-4 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10 ">
-                                    Developer Community 
+                                    Developer Community
                                 </span>
                             </div>
 
@@ -102,7 +99,7 @@ const Developer = () => {
                                 </a>
 
                                 <a
-                                    href="https://github.com/pingitai"
+                                    href="https://github.com/pingit"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="inline-flex h-12 items-center justify-center rounded-full bg-gray-50 px-6 py-1 text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors duration-200"
