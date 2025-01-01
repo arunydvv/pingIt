@@ -132,6 +132,7 @@ const Developer = () => {
 
                             {/* Code content */}
                             <div className="p-4 font-mono text-sm">
+                                {/* eslint-disable react/no-unescaped-entities */}
                                 <pre className="text-gray-300">
                                     <span className="text-blue-400">class</span>{" "}
                                     <span className="text-green-400">PingIt</span>:
@@ -142,14 +143,9 @@ const Developer = () => {
                                     {"\n"}{"        "}self.alerts = "Active"
                                     {"\n"}{"        "}self.users = "10000+"
                                     {"\n"}
-                                    {"\n"}{"    "}
-                                    <span className="text-blue-400">def</span>{" "}
-                                    <span className="text-yellow-400">send_alert</span>(self):
-                                    {"\n"}{"        "}
-                                    <span className="text-purple-400">print</span>(&quot;Alert sent to Discord!&quot;)
-                                    {"\n"}{"        "}
-                                    <span className="text-gray-500"># Start your SaaS journey</span>
                                 </pre>
+                                {/* eslint-enable react/no-unescaped-entities */}
+
                             </div>
 
 
