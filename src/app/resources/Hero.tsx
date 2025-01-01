@@ -2,6 +2,8 @@
 
 import { motion } from "framer-motion";
 import { SparklesIcon } from "@heroicons/react/24/solid";
+import Image from "next/image";
+
 
 const Hero = () => {
     return (
@@ -94,8 +96,14 @@ const Hero = () => {
                                     </div>
                                 </div>
 
-                                <div className="bg-white p-4">
-                                    <img src="" alt="Demo Image here" className="aspect-[9/16] w-full max-w-xs mx-auto bg-gray-100 rounded-xl shadow-inner" />
+                                <div className="bg-white p-4 h-full">
+                                    <Image
+                                        src={"/user/user2.png"}
+                                        alt="Demo Image here"
+                                        className="aspect-[9/16] w-full max-w-xs mx-auto rounded-xl shadow-inner h-full"
+                                        width={400}
+                                        height={400}
+                                    />
                                 </div>
 
                             </div>
