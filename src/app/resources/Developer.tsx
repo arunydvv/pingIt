@@ -146,12 +146,12 @@ const Developer = () => {
                                     <span className="text-blue-400">def</span>{" "}
                                     <span className="text-yellow-400">send_alert</span>(self):
                                     {"\n"}{"        "}
-                                    <span className="text-purple-400">print</span>
-                                    ("Alert sent to Discord!")
+                                    <span className="text-purple-400">print</span>(&quot;Alert sent to Discord!&quot;)
                                     {"\n"}{"        "}
                                     <span className="text-gray-500"># Start your SaaS journey</span>
                                 </pre>
                             </div>
+
 
                             {/* Decorative comments section */}
                             <div className="border-t border-gray-800 p-4">
