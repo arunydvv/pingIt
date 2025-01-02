@@ -14,31 +14,25 @@ import {
 const navigation = {
     product: [
         { name: "Features", href: "#features" },
-        { name: "Download", href: "#download" },
-        { name: "Changelog", href: "#" },
-        { name: "Development Roadmap", href: "#" },
+        { name: "Download", href: "/download" },
+        { name: "Changelog", href: "/changeLog" },
+        { name: "Development", href: "#" },
     ],
     community: [
         { name: "Developer Community", href: "#developer" },
         { name: "Tech Blog", href: "#" },
-        { name: "Feedback", href: "#" },
+        { name: "Feedback", href: "/feedback" },
         { name: "Join Us", href: "#" },
     ],
     legal: [
-        { name: "Privacy Policy", href: "#" },
-        { name: "Terms of Use", href: "#" },
-        { name: "Disclaimer", href: "#" },
+        { name: "Privacy Policy", href: "/docs" },
+        { name: "Terms of Use", href: "/docs" },
+        { name: "Disclaimer", href: "/docs" },
     ],
     social: [
         {
-            name: "WeChat Community",
-            href: "#",
-            icon: MessageSquareIcon,
-            value: "1796060717",
-        },
-        {
             name: "GitHub",
-            href: "https://github.com/arunydvv",
+            href: "https://github.com/arunydvv/pingIt",
             icon: GithubIcon,
         },
         {
