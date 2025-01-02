@@ -111,7 +111,7 @@ export const MockDiscordApp = ({ children }: PropsWithChildren) => {
                                     className="flex items-center px-2 py-1.5 rounded text-gray-600 cursor-not-allowed"
                                 >
                                     <Image src={user.imgPath} alt="Users" height={32} width={32} className="bg-contain rounded-full me-3" />
-                                    <span className="font-medium">{user.name}</span>
+                                    <span className="font-medium text-[#b9bbbe] ">{user.name}</span>
                                 </div>
                             ))}
                         </div>

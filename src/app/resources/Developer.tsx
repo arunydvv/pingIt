@@ -87,7 +87,7 @@ const Developer = () => {
 
                             <div className="mt-12 flex items-center gap-4">
                                 <a
-                                    href="https://pingitai.com/developer-community"
+                                    href="https://github.com/arunydvv/pingit"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2"
@@ -99,7 +99,7 @@ const Developer = () => {
                                 </a>
 
                                 <a
-                                    href="https://github.com/pingit"
+                                    href="https://github.com/arunydvv/pingit"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="inline-flex h-12 items-center justify-center rounded-full bg-gray-50 px-6 py-1 text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors duration-200"
